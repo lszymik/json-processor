@@ -1,0 +1,16 @@
+<configuration>
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>[%date{HH:mm:ss}] %level %logger %black(%m) %n</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="me.lszymik.json.processor" level="INFO">
+		<appender-ref ref="CONSOLE" />
+	</logger>
+
+	<root level="ERROR">
+		<appender-ref ref="CONSOLE" />
+	</root>
+
+</configuration>
